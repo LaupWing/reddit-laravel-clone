@@ -16,7 +16,10 @@ return new class extends Migration
             $table->timestamps();
             $table->string("name")->unique();
             $table->string("description");
-            // $table-
+            $table->foreignIdFor(
+               \App\Models\User::class,
+               "user_id"
+            )->constrained("users")->onDelete("cascade");
         });
     }
 
@@ -25,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('genres');
+        Schema::dropIfExists("genres");
     }
 };
