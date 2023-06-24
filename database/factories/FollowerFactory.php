@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Follower;
 use App\Models\Genre;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
@@ -18,13 +19,18 @@ class FollowerFactory extends Factory
     */
    public function definition(): array
    {
-      $userIds = User::pluck('id')->toArray();
-      $genreIds = Genre::pluck('id')->toArray();
-      
+      $user = User::inRandomOrder()->first();
+      $genre = Genre::inRandomOrder()->first();
+
+      while (Follower::where("user_id", $user->id)->where("genre_id", $genre->id)->exists()) {
+         $user = User::inRandomOrder()->first();
+         $genre = Genre::inRandomOrder()->first();
+     }
+
+
       return [
-         "user_id" => $this->faker->unique()->randomElement($userIds),
-         "genre_id" => $this->faker->unique()->randomElement($genreIds),
+         "user_id" => $user->id,
+         "genre_id" => $genre->id,
       ];
    }
-   
 }
