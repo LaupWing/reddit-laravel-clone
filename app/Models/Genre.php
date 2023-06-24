@@ -7,5 +7,15 @@ use Illuminate\Database\Eloquent\Model;
 
 class Genre extends Model
 {
-    use HasFactory;
+   use HasFactory;
+
+   protected $fillable = ["description", "name"];
+
+   public function followers(){
+      return $this->belongsToMany(Follower::class);
+   }
+
+   public function owner(){
+      return $this->belongsTo(User::class);
+   }
 }
