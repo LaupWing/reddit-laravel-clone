@@ -20,10 +20,11 @@ class FollowerFactory extends Factory
    {
       $userIds = User::pluck('id')->toArray();
       $genreIds = Genre::pluck('id')->toArray();
-
+      
       return [
          "user_id" => $this->faker->unique()->randomElement($userIds),
          "genre_id" => $this->faker->unique()->randomElement($genreIds),
       ];
    }
+   
 }
