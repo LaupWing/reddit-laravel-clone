@@ -16,6 +16,8 @@ return new class extends Migration
             $table->timestamps();
             $table->string("name")->unique();
             $table->string("description");
+            $table->string("profile_picture")->nullable();
+            $table->string("thumbnail")->nullable();
             $table->foreignIdFor(
                \App\Models\User::class,
                "user_id"
