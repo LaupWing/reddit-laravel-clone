@@ -18,7 +18,7 @@ class GenreFactory extends Factory
    public function definition(): array
    {
       return [
-         "title" => fake()->unique()->name(),
+         "name" => fake()->unique()->word(),
          "description" => fake()->text(),
          "user_id" => function() {
             return User::inRandomOrder()->first()->id;

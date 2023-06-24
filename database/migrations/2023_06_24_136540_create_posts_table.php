@@ -23,7 +23,7 @@ return new class extends Migration
             "user_id"
          )->constrained("users")->onDelete("cascade");
          $table->text("content");
-         $table->string("title");
+         $table->string("name");
       });
    }
 

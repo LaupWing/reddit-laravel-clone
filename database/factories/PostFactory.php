@@ -20,7 +20,7 @@ class PostFactory extends Factory
       $genre = \App\Models\Genre::inRandomOrder()->first();
 
       return [
-         "title" => fake()->name(),
+         "name" => fake()->name(),
          "content" => fake()->text(),
          "user_id" => $user->id,
          "genre_id" => $genre->id
