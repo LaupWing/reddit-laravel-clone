@@ -9,5 +9,15 @@ class Post extends Model
 {
    use HasFactory;
 
-   protected $fillable = ["content", "name"];
+   protected $fillable = ["title", "content"];
+
+   public function genre()
+   {
+      return $this->belongsTo(Genre::class);
+   }
+
+   public function owner()
+   {
+      return $this->belongsTo(User::class);
+   }
 }
