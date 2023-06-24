@@ -9,7 +9,7 @@ class Genre extends Model
 {
    use HasFactory;
 
-   protected $fillable = ["description", "name"];
+   protected $fillable = ["title", "description"];
 
    public function followers(){
       return $this->belongsToMany(Follower::class);
