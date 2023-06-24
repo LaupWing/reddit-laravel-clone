@@ -12,12 +12,16 @@ return new class extends Migration
    public function up(): void
    {
       Schema::create("followers", function (Blueprint $table) {
-         $table->id();
+         $table->primary(["genre_id", "user_id"]);
          $table->timestamps();
          $table->foreignIdFor(
             \App\Models\User::class,
             "user_id"
          )->constrained("users")->onDelete("cascade");
+         $table->foreignIdFor(
+            \App\Genre\User::class,
+            "genre_id"
+         )->constrained("genres")->onDelete("cascade");
       });
    }
 
