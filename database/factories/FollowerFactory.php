@@ -22,12 +22,6 @@ class FollowerFactory extends Factory
       $user = User::inRandomOrder()->first();
       $genre = Genre::inRandomOrder()->first();
 
-      while (Follower::where("user_id", $user->id)->where("genre_id", $genre->id)->exists()) {
-         $user = User::inRandomOrder()->first();
-         $genre = Genre::inRandomOrder()->first();
-     }
-
-
       return [
          "user_id" => $user->id,
          "genre_id" => $genre->id,
