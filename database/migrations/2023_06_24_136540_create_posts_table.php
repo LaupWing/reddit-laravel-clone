@@ -22,6 +22,8 @@ return new class extends Migration
             \App\Models\User::class,
             "user_id"
          )->constrained("users")->onDelete("cascade");
+         $table->text("content");
+         $table->string("title");
       });
    }
 
@@ -30,6 +32,6 @@ return new class extends Migration
     */
    public function down(): void
    {
-      Schema::dropIfExists('posts');
+      Schema::dropIfExists("posts");
    }
 };
