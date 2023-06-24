@@ -22,6 +22,8 @@ return new class extends Migration
             \App\Models\User::class,
             "user_id"
          )->constrained("users")->onDelete("cascade");
+         $table->string("profile_picture")->nullable();
+         $table->string("thumbnail")->nullable();
          $table->text("content");
          $table->string("title");
       });
