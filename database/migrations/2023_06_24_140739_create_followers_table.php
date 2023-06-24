@@ -19,7 +19,7 @@ return new class extends Migration
             "user_id"
          )->constrained("users")->onDelete("cascade");
          $table->foreignIdFor(
-            \App\Genre\Genre::class,
+            \App\Models\Genre::class,
             "genre_id"
          )->constrained("genres")->onDelete("cascade");
       });
