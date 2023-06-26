@@ -11,8 +11,8 @@
 </head>
 
 <body class="antialiased">
-   <main>
-      {{slot}}
+   <main class="bg-red-100">
+      {{$slot}}
    </main>
 </body>
 
