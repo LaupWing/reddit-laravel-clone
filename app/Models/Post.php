@@ -11,9 +11,9 @@ class Post extends Model
 
    protected $fillable = ["title", "content"];
 
-   public function genre()
+   public function topic()
    {
-      return $this->belongsTo(Genre::class);
+      return $this->belongsTo(Topic::class);
    }
 
    public function owner()

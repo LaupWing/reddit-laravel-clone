@@ -3,7 +3,7 @@
 namespace Database\Factories;
 
 use App\Models\Follower;
-use App\Models\Genre;
+use App\Models\Topic;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -20,11 +20,11 @@ class FollowerFactory extends Factory
    public function definition(): array
    {
       $user = User::inRandomOrder()->first();
-      $genre = Genre::inRandomOrder()->first();
+      $topic = Topic::inRandomOrder()->first();
 
       return [
          "user_id" => $user->id,
-         "genre_id" => $genre->id,
+         "topic_id" => $topic->id,
       ];
    }
 }

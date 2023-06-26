@@ -15,9 +15,9 @@ return new class extends Migration
          $table->id();
          $table->timestamps();
          $table->foreignIdFor(
-            \App\Models\Genre::class,
-            "genre_id"
-         )->constrained("genres")->onDelete("cascade");
+            \App\Models\Topic::class,
+            "topic_id"
+         )->constrained("topics")->onDelete("cascade");
          $table->foreignIdFor(
             \App\Models\User::class,
             "user_id"

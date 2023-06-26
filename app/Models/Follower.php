@@ -11,7 +11,7 @@ class Follower extends Model
 
    protected $fillable = [
       "user_id",
-      "genre_id"
+      "topic_id"
    ];
 
    public function user()
@@ -19,8 +19,8 @@ class Follower extends Model
       return $this->belongsTo(User::class);
    }
 
-   public function genre()
+   public function topic()
    {
-      return $this->belongsTo(Genre::class);
+      return $this->belongsTo(Topic::class);
    }
 }
