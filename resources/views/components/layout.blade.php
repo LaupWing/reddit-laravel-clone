@@ -13,7 +13,9 @@
 
 <body class="antialiased">
    <main class="min-h-screen w-full bg-main">
-      <header></header>
+      <header>
+         <x-reddit-circle />
+      </header>
       {{$slot}}
    </main>
 </body>
