@@ -24,12 +24,20 @@
                   placeholder="Search Reddit"
                >
             </div>
-            <div class="flex">
+            <div
+               class="border-l"
+            >
+            </div>
+            
+            <div class="flex items-center gap-2">
                <img 
                   class="w-8 h-8 object-cover"
                   src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg" 
-                  alt=""
+                  alt="Profile"
                >
+               <div class="flex flex-col h-full">
+                  <span class="text-sm font-bold">Loc Nguyen</span>
+               </div>
             </div>
          </div>
       </header>
