@@ -14,8 +14,15 @@
 <body class="antialiased">
    <main class="min-h-screen w-full bg-main">
       <header class="w-full bg-secondary flex">
-         <div class="container py-2 mx-auto">
+         <div class="container py-2 mx-auto flex gap-6">
             <x-icons.reddit-circle class="text-accent w-10 h-10" />
+            <div class="flex flex-1">
+               <input 
+                  type="text" 
+                  class="border flex-1 bg-gray-100 border-gray-200 pl-10 focus:outline-none rounded-full px-2"
+                  placeholder="Search Reddit"
+               >
+            </div>
          </div>
       </header>
       {{$slot}}
