@@ -29,15 +29,17 @@
             >
             </div>
             
-            <div class="flex items-center gap-2">
+            <div class="flex items-center gap-4">
                <img 
                   class="w-8 h-8 object-cover"
                   src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg" 
                   alt="Profile"
                >
-               <div class="flex flex-col h-full">
-                  <span class="text-sm font-bold">Loc Nguyen</span>
+               <div class="flex flex-col justify-between h-full text-sm">
+                  <span class="font-bold">Loc Nguyen</span>
+                  <span class="text-gray-400 font-semibold">Total posts 8</span>
                </div>
+               <x-icons.chevron-down class="w-4 h-4 ml-6 text-gray-400" />
             </div>
          </div>
       </header>
