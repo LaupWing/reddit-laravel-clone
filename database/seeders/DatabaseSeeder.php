@@ -31,4 +31,15 @@ class DatabaseSeeder extends Seeder
       //     'email' => 'test@example.com',
       // ]);
    }
+
+   public function createOfJunction($amount, $model_blueprint){
+      for($i =0; $i < $amount; $i++){
+         $model = $model_blueprint::factory()->make();
+         
+         while($model_blueprint::where("user_id", $model->user_id)->where("topic_id", $model->topic_id)->exists()){
+            $model = $model_blueprint::factory()->make();
+         }
+         $model->save();
+      }
+   }
 }
