@@ -16,11 +16,19 @@
       <header class="w-full bg-secondary flex">
          <div class="container py-2 mx-auto flex gap-6">
             <x-icons.reddit-circle class="text-accent w-10 h-10" />
-            <div class="flex flex-1">
+            <div class="flex flex-1 relative">
+               <x-icons.search class="text-gray-400/70 absolute top-0 bottom-0 left-4 my-auto w-6 h-6" />
                <input 
                   type="text" 
-                  class="border flex-1 bg-gray-100 border-gray-200 pl-10 focus:outline-none rounded-full px-2"
+                  class="border flex-1 bg-gray-100 border-gray-200 pl-12 focus:outline-none rounded-full px-2"
                   placeholder="Search Reddit"
+               >
+            </div>
+            <div class="flex">
+               <img 
+                  class="w-8 h-8 object-cover"
+                  src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg" 
+                  alt=""
                >
             </div>
          </div>
