@@ -39,7 +39,7 @@
                   <span class="font-bold">Loc Nguyen</span>
                   <span class="text-gray-400 font-semibold">Total posts 8</span>
                </div>
-               <x-icons.chevron-down class="w-4 h-4 ml-6 text-gray-400" />
+               <x-icons.chevron-down class="w-4 h-4 ml-10 text-gray-400" />
             </button>
          </div>
       </header>
