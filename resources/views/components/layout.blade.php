@@ -12,7 +12,7 @@
 </head>
 
 <body class="antialiased">
-   <main class="">
+   <main class="min-h-screen w-full bg-main">
       <header></header>
       {{$slot}}
    </main>
