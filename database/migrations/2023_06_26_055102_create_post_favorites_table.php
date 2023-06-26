@@ -21,6 +21,7 @@ return new class extends Migration
             \App\Models\Topic::class,
             "topic_id"
          )->constrained("topics")->onDelete("cascade");
+         $table->date("last_visited");
          $table->timestamps();
       });
    }
