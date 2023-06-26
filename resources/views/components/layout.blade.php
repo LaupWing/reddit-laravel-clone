@@ -13,8 +13,10 @@
 
 <body class="antialiased">
    <main class="min-h-screen w-full bg-main">
-      <header>
-         <x-icons.reddit-circle class="text-accent w-14 h-14" />
+      <header class="w-full bg-secondary flex">
+         <div class="container py-2 mx-auto">
+            <x-icons.reddit-circle class="text-accent w-10 h-10" />
+         </div>
       </header>
       {{$slot}}
    </main>
