@@ -17,15 +17,6 @@ class DatabaseSeeder extends Seeder
       \App\Models\Post::factory(100)->create();
 
       $this->createOfJunction(500, \App\Models\Follower::class);
-      // $totalFollowers = 500;
-      // for($i =0; $i < $totalFollowers; $i++){
-      //    $follower = \App\Models\Follower::factory()->make();
-         
-      //    while(\App\Models\Follower::where("user_id", $follower->user_id)->where("topic_id", $follower->topic_id)->exists()){
-      //       $follower = \App\Models\Follower::factory()->make();
-      //    }
-      //    $follower->save();
-      // }
 
       // \App\Models\User::factory()->create([
       //     'name' => 'Test User',
