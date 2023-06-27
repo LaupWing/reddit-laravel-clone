@@ -10,7 +10,8 @@ export default {
          colors: {
             main: "#dae0e6",
             secondary: "#ffffff",
-            accent: "#ff4500"
+            accent: "#ff4500",
+            line: "#ccc"
          }
       },
    },
