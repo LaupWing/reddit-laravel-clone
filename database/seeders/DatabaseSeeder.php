@@ -31,7 +31,10 @@ class DatabaseSeeder extends Seeder
       for($i =0; $i < $amount; $i++){
          $model = $model_blueprint::factory()->make();
          
-         while($model_blueprint::where("user_id", $model->user_id)->where($second_id, $model[$second_id])->exists()){
+         while($model_blueprint::
+            where("user_id", $model->user_id)
+            ->where($second_id, $model[$second_id])->exists()
+         ){
             $model = $model_blueprint::factory()->make();
          }
          $model->save();
