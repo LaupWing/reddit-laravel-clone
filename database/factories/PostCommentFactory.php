@@ -9,15 +9,20 @@ use Illuminate\Database\Eloquent\Factories\Factory;
  */
 class PostCommentFactory extends Factory
 {
-    /**
-     * Define the model's default state.
-     *
-     * @return array<string, mixed>
-     */
-    public function definition(): array
-    {
-        return [
-            //
-        ];
-    }
+   /**
+    * Define the model's default state.
+    *
+    * @return array<string, mixed>
+    */
+   public function definition(): array
+   {
+      $user = \App\Models\User::inRandomOrder()->first();
+      $post = \App\Models\Post::inRandomOrder()->first();
+
+      return [
+         "comment" => fake()->text(),
+         "user_id" => $user->id,
+         "post_id" => $post->id
+      ];
+   }
 }
