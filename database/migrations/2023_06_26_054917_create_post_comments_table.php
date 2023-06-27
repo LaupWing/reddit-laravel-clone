@@ -13,6 +13,7 @@ return new class extends Migration
    {
       Schema::create("post_comments", function (Blueprint $table) {
          $table->primary(["topic_id", "user_id"]);
+         $table->text("comment");
          $table->foreignIdFor(
             \App\Models\User::class,
             "user_id"
