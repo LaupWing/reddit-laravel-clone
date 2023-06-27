@@ -19,7 +19,7 @@ class DatabaseSeeder extends Seeder
 
       $this->createUniqueJunction(500, \App\Models\Follower::class, "topic_id");
       $this->createUniqueJunction(500, \App\Models\PostFavorite::class);
-      $this->createUniqueJunction(500, \App\Models\Vote::class);
+      $this->createUniqueJunction(200, \App\Models\Vote::class);
 
       // \App\Models\User::factory()->create([
       //     'name' => 'Test User',
