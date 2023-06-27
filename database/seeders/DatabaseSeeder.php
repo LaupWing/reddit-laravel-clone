@@ -15,7 +15,7 @@ class DatabaseSeeder extends Seeder
       \App\Models\User::factory(100)->create();
       \App\Models\Topic::factory(10)->create();
       \App\Models\Post::factory(100)->create();
-      
+      \App\Models\PostComment::factory(1000)->create();
 
       $this->createUniqueJunction(500, \App\Models\Follower::class);
       $this->createUniqueJunction(500, \App\Models\PostFavorite::class);
