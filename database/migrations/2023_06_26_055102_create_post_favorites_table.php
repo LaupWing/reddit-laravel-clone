@@ -18,9 +18,9 @@ return new class extends Migration
             "user_id"
          )->constrained("users")->onDelete("cascade");
          $table->foreignIdFor(
-            \App\Models\Topic::class,
-            "topic_id"
-         )->constrained("topics")->onDelete("cascade");
+            \App\Models\Post::class,
+            "post_id"
+         )->constrained("posts")->onDelete("cascade");
          $table->date("last_visited");
          $table->timestamps();
       });
