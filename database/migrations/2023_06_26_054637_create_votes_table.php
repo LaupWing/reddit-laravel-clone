@@ -12,7 +12,7 @@ return new class extends Migration
    public function up(): void
    {
       Schema::create("votes", function (Blueprint $table) {
-         $table->primary(["topic_id", "user_id"]);
+         $table->primary(["post_id", "user_id"]);
          $table->timestamps();
          $table->foreignIdFor(
             \App\Models\User::class,
