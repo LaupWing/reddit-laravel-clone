@@ -21,7 +21,8 @@ class PostFavoriteFactory extends Factory
 
       return [
          "user_id" => $user->id,
-         "post_id" => $post->id
+         "post_id" => $post->id,
+         "last_visited" => now()
       ];
    }
 }
