@@ -17,7 +17,7 @@ class DatabaseSeeder extends Seeder
       \App\Models\Post::factory(100)->create();
       \App\Models\PostComment::factory(1000)->create();
 
-      $this->createUniqueJunction(500, \App\Models\Follower::class);
+      $this->createUniqueJunction(500, \App\Models\Follower::class, "topic_id");
       $this->createUniqueJunction(500, \App\Models\PostFavorite::class);
       $this->createUniqueJunction(500, \App\Models\Vote::class);
 
@@ -27,11 +27,11 @@ class DatabaseSeeder extends Seeder
       // ]);
    }
 
-   public function createUniqueJunction($amount, $model_blueprint){
+   public function createUniqueJunction($amount, $model_blueprint, $second_id = "post_id"){
       for($i =0; $i < $amount; $i++){
          $model = $model_blueprint::factory()->make();
          
-         while($model_blueprint::where("user_id", $model->user_id)->where("topic_id", $model->topic_id)->exists()){
+         while($model_blueprint::where("user_id", $model->user_id)->where($second_id, $model->topic_id)->exists()){
             $model = $model_blueprint::factory()->make();
          }
          $model->save();
