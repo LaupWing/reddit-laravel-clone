@@ -16,7 +16,8 @@ class DatabaseSeeder extends Seeder
       \App\Models\Topic::factory(10)->create();
       \App\Models\Post::factory(100)->create();
 
-      $this->createOfJunction(500, \App\Models\Follower::class);
+      $this->createUniqueJunction(500, \App\Models\Follower::class);
+      $this->createUniqueJunction(500, \App\Models\PostFavorite::class);
 
       // \App\Models\User::factory()->create([
       //     'name' => 'Test User',
@@ -24,7 +25,7 @@ class DatabaseSeeder extends Seeder
       // ]);
    }
 
-   public function createOfJunction($amount, $model_blueprint){
+   public function createUniqueJunction($amount, $model_blueprint){
       for($i =0; $i < $amount; $i++){
          $model = $model_blueprint::factory()->make();
          
