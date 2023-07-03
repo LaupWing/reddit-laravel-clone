@@ -23,6 +23,10 @@
                </button>
             </div>
          </x-cards.base>
+         <x-cards.base>
+            <div class="flex flex-1 gap-2 items-center">
+            </div>
+         </x-cards.base>
       </div>
       <div class="flex flex-col">
 
