@@ -42,6 +42,9 @@
             >
          @endisset
          <p>{{$post->content}}</p>
+         <div>
+            <button>{{count($post->comments)}}</button>
+         </div>
       </div>
    </div>
 </div>
