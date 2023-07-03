@@ -3,11 +3,13 @@
       <div class="flex flex-col col-span-2">
          <x-cards.base>
             <div class="flex flex-1 gap-2 items-center">
-               <img 
-                  class="w-10 h-10 object-cover"
-                  src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg" 
-                  alt="Profile"
-               >
+               <div class="w-10 h-10 border-gray-200 border-[3px] rounded-full overflow-hidden">
+                  <img 
+                     class="h-full w-full object-cover"
+                     src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg" 
+                     alt="Profile"
+                  >
+               </div>
                <input 
                   class="border h-10 flex-1 bg-gray-100 border-gray-200 focus:outline-none rounded px-2"
                   placeholder="Create post"
