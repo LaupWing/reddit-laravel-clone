@@ -21,8 +21,16 @@
          >
             t/{{$post->topic->name}}
          </a>
-         •
-         <a href="">by {{$post->user->name}}</a>
+         <span>
+            •
+         </span>
+         <a 
+            class="hover:underline" 
+            href="/user/{{$post->user->id}}"
+         >
+            by {{$post->user->name}}
+            {{$post->created_at->diffForHumans()}}
+         </a>
       </div>
       <h2>{{$post->name}}</h2>
    </div>
