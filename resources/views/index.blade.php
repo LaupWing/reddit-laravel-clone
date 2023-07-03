@@ -48,7 +48,16 @@
          </div>
       </div>
       <div class="flex flex-col">
-
+         <x-cards.base>
+            <div class="flex flex-col gap-2">
+               <div class="flex items-center gap-2">
+                  <x-icons.reddit-circle class="text-accent w-10 h-10" />
+                  <h2 class="font-semibold text-xl">Home</h2>
+               </div>
+               <p>Your personal Reddit frontpage. Come here to check in with your favorite communities.</p>
+               <hr>
+            </div>
+         </x-cards.base>
       </div>
    </div>
 </x-layout>
