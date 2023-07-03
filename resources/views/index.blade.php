@@ -41,7 +41,7 @@
          </x-cards.base>
          <div>
             @foreach ($posts as $post)
-               <x-cards.post>Test</x-cards.post>
+               <x-cards.post :post="$post">Test</x-cards.post>
             @endforeach
          </div>
       </div>
