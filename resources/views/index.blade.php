@@ -39,9 +39,11 @@
                </button>
             </div>
          </x-cards.base>
-         <div>
+         <div class="flex flex-col gap-3">
             @foreach ($posts as $post)
-               <x-cards.post :post="$post">Test</x-cards.post>
+               <x-cards.post 
+                  :post="$post"
+               />
             @endforeach
          </div>
       </div>
