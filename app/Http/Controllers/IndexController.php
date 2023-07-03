@@ -10,7 +10,6 @@ class IndexController extends Controller
 {
    public function index()
    {
-      dd(Post::latest()->get());
       return view("index", [
          "posts" => Post::latest()->get()
       ]);
