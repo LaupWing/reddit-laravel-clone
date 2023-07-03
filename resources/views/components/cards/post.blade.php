@@ -15,8 +15,14 @@
                alt="Profile"
             >
          </div>
-         <a class="font-bold hover:underline text-black" href="/t/{{$post->topic->id}}">t/{{$post->topic->name}}</a>
+         <a 
+            class="font-bold hover:underline text-black" 
+            href="/t/{{$post->topic->id}}"
+         >
+            t/{{$post->topic->name}}
+         </a>
          •
+         <a href="">by {{$post->user->name}}</a>
       </div>
       <h2>{{$post->name}}</h2>
    </div>
