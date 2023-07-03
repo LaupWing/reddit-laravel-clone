@@ -23,7 +23,8 @@ class PostFactory extends Factory
          "name" => fake()->name(),
          "content" => fake()->text(),
          "user_id" => $user->id,
-         "topic_id" => $topic->id
+         "topic_id" => $topic->id,
+         "media" => rand(0, 1) ? fake()->imageUrl() : null
       ];
    }
 }
