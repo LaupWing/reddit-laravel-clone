@@ -56,8 +56,11 @@
                </div>
                <p>Your personal Reddit frontpage. Come here to check in with your favorite communities.</p>
                <hr>
-               <button class="bg-blue-500 text-white rounded-full py-1 font-bold">
+               <button class="border-blue-500 border-[3px] bg-blue-500 text-white rounded-full py-1 font-bold">
                   Create Post
+               </button>
+               <button class="border-blue-500 border-[3px] text-blue-500 rounded-full py-1 font-bold">
+                  Create Community
                </button>
             </div>
          </x-cards.base>
