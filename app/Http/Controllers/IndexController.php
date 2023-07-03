@@ -11,7 +11,7 @@ class IndexController extends Controller
    public function index()
    {
       return view("index", [
-         "posts" => Post::latest()->get()
+         "posts" => Post::latest()->paginate(10)
       ]);
    }
 }

@@ -39,9 +39,11 @@
                </button>
             </div>
          </x-cards.base>
-         {{-- @foreach ($posts as $post)
-            <div></div>
-         @endforeach --}}
+         <div>
+            @foreach ($posts as $post)
+               <div>Test</div>
+            @endforeach
+         </div>
       </div>
       <div class="flex flex-col">
 
