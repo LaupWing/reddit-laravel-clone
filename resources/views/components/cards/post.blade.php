@@ -34,6 +34,9 @@
       </div>
       <div class="flex flex-col">
          <h2 class="text-xl font-semibold">{{$post->name}}</h2>
+         @isset($post->media)
+
+         @endisset
          <p></p>
       </div>
    </div>
