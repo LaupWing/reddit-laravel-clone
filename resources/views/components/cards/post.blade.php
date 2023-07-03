@@ -6,7 +6,7 @@
       100
       <x-icons.arrow-down-circle class="w-6 h-6" />
    </div>
-   <div class="p-2">
+   <div class="p-2 flex flex-col gap-0.5">
       <div class="flex gap-2 text-xs text-gray-400 items-center">
          <div class="w-5 h-5 border-gray-200 border-2 rounded-full overflow-hidden">
             <img 
@@ -32,6 +32,9 @@
             {{$post->created_at->diffForHumans()}}
          </a>
       </div>
-      <h2>{{$post->name}}</h2>
+      <div class="flex flex-col">
+         <h2 class="text-xl font-semibold">{{$post->name}}</h2>
+         <p></p>
+      </div>
    </div>
 </div>
