@@ -42,8 +42,13 @@
             >
          @endisset
          <p>{{$post->content}}</p>
-         <div>
-            <button>{{count($post->comments)}}</button>
+         <div class="flex">
+            <button class="flex items-center gap-2 font-bold text-sm py-2 text-gray-500 rounded px-4 hover:bg-gray-100">
+               <x-icons.comment class="w-5 h-5" />  {{count($post->comments)}} Comments
+            </button>
+            <button class="flex items-center gap-2 font-bold text-sm py-2 text-gray-500 rounded px-4 hover:bg-gray-100">
+               <x-icons.star-outline class="w-5 h-5" />  Favorite
+            </button>
          </div>
       </div>
    </div>
