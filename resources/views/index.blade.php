@@ -7,6 +7,7 @@
                src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg" 
                alt="Profile"
             >
+            <input type="text">
          </x-cards.base>
       </div>
       <div class="flex flex-col">
