@@ -49,13 +49,16 @@
       </div>
       <div class="flex flex-col">
          <x-cards.base>
-            <div class="flex flex-col gap-2">
+            <div class="flex flex-col gap-4">
                <div class="flex items-center gap-2">
                   <x-icons.reddit-circle class="text-accent w-10 h-10" />
                   <h2 class="font-semibold text-xl">Home</h2>
                </div>
                <p>Your personal Reddit frontpage. Come here to check in with your favorite communities.</p>
                <hr>
+               <button class="bg-blue-500 text-white rounded-full py-1 font-bold">
+                  Create Post
+               </button>
             </div>
          </x-cards.base>
       </div>
