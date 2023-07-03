@@ -1,12 +1,12 @@
 <div 
-   {{$attributes->merge(["class"=> "bg-secondary flex border border-line rounded"])}}
+   {{$attributes->merge(["class"=> "bg-secondary flex border border-line rounded flex-1"])}}
 >
    <div class="flex flex-col bg-gray-100 text-gray-400 p-2 gap-1 items-center">
       <x-icons.arrow-up-circle class="w-6 h-6" />
       100
       <x-icons.arrow-down-circle class="w-6 h-6" />
    </div>
-   <div class="p-3 flex flex-col">
+   <div class="p-3 flex flex-col flex-1">
       <div class="flex gap-2 text-xs text-gray-400 items-center mb-0.5">
          <div class="w-5 h-5 border-gray-200 border-2 rounded-full overflow-hidden">
             <img 
@@ -41,7 +41,7 @@
                class="mx-auto"
             >
          @endisset
-         <p></p>
+         <p>{{$post->content}}</p>
       </div>
    </div>
 </div>
