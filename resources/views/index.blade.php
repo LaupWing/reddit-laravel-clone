@@ -48,7 +48,7 @@
          </div>
       </div>
       <div class="flex flex-col">
-         <x-cards.base>
+         <x-cards.base class="mb-5">
             <div class="flex flex-col gap-4">
                <div class="flex items-center gap-2">
                   <x-icons.reddit-circle class="text-accent w-10 h-10" />
@@ -62,6 +62,35 @@
                <button class="border-blue-500 border-[3px] text-blue-500 rounded-full py-1 font-bold">
                   Create Community
                </button>
+            </div>
+         </x-cards.base>
+         <x-cards.base>
+            <div class="flex flex-col text-sm">
+               <div class="grid grid-cols-2 flex-1">
+                  <ul class="flex flex-col gap-2">
+                     <li class="leading-5">User Agreement</li>
+                     <li class="leading-5">Privacy Policy</li>
+                  </ul>
+                  <ul class="flex flex-col gap-2">
+                     <li class="leading-5">Content Policy</li>
+                     <li class="leading-5">Moderator Code of Conduct</li>
+                  </ul>
+               </div>
+               <hr class="my-4">
+               <div class="grid grid-cols-2 flex-1">
+                  <ul class="flex flex-col gap-2">
+                     <li class="leading-5">English</li>
+                     <li class="leading-5">Français</li>
+                     <li class="leading-5">Italiano</li>
+                  </ul>
+                  <ul class="flex flex-col gap-2">
+                     <li class="leading-5">Deutsch</li>
+                     <li class="leading-5">Español</li>
+                     <li class="leading-5">Português</li>
+                  </ul>
+               </div>
+               <hr class="my-4">
+               <span>Reddit, Inc. © 2023. All rights reserved.</span>
             </div>
          </x-cards.base>
       </div>
