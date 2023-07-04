@@ -50,22 +50,24 @@
          </div>
       </div>
       <div class="flex flex-col">
-         <x-cards.base class="mb-5">
-            <div class="flex flex-col gap-4">
-               <div class="flex items-center gap-2">
-                  <x-icons.reddit-circle class="text-accent w-10 h-10" />
-                  <h2 class="font-semibold text-xl">Home</h2>
+         @auth
+            <x-cards.base class="mb-5">
+               <div class="flex flex-col gap-4">
+                  <div class="flex items-center gap-2">
+                     <x-icons.reddit-circle class="text-accent w-10 h-10" />
+                     <h2 class="font-semibold text-xl">Home</h2>
+                  </div>
+                  <p>Your personal Reddit frontpage. Come here to check in with your favorite communities.</p>
+                  <hr>
+                  <button class="border-blue-500 border-[3px] bg-blue-500 text-white rounded-full py-1 font-bold">
+                     Create Post
+                  </button>
+                  <button class="border-blue-500 border-[3px] text-blue-500 rounded-full py-1 font-bold">
+                     Create Community
+                  </button>
                </div>
-               <p>Your personal Reddit frontpage. Come here to check in with your favorite communities.</p>
-               <hr>
-               <button class="border-blue-500 border-[3px] bg-blue-500 text-white rounded-full py-1 font-bold">
-                  Create Post
-               </button>
-               <button class="border-blue-500 border-[3px] text-blue-500 rounded-full py-1 font-bold">
-                  Create Community
-               </button>
-            </div>
-         </x-cards.base>
+            </x-cards.base>
+         @endauth
          <x-cards.base>
             <div class="flex flex-col text-sm">
                <div class="grid grid-cols-2 flex-1">
