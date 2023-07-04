@@ -27,19 +27,26 @@
             class="border-l"
          >
          </div>
-         
-         <button class="flex items-center gap-4">
-            <img 
-               class="w-8 h-8 object-cover"
-               src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg" 
-               alt="Profile"
-            >
-            <div class="flex flex-col justify-between h-full text-sm">
-               <span class="font-bold">Loc Nguyen</span>
-               <span class="text-gray-400 font-semibold">Total posts 8</span>
-            </div>
-            <x-icons.chevron-down class="w-4 h-4 ml-10 text-gray-400" />
-         </button>
+         @auth
+            <button class="flex items-center gap-4">
+               <img 
+                  class="w-8 h-8 object-cover"
+                  src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg" 
+                  alt="Profile"
+               >
+               <div class="flex flex-col justify-between h-full text-sm">
+                  <span class="font-bold">Loc Nguyen</span>
+                  <span class="text-gray-400 font-semibold">Total posts 8</span>
+               </div>
+               <x-icons.chevron-down class="w-4 h-4 ml-10 text-gray-400" />
+            </button>
+            @else
+            <button class="bg-accent w-32 my-1 text-white rounded-full py-1 font-bold">
+               <a href="/login">
+                  Log In
+               </a>
+            </button>
+         @endauth
       </div>
    </header>
    <main class="container p-10 mx-auto">
