@@ -9,8 +9,8 @@
          <h2 class="ml-1 font-bold text-gray-300 uppercase tracking-wide">Email</h2>
          <input 
             class="border h-10 flex-1 bg-gray-100 border-gray-200 focus:outline-none rounded px-2"
-            placeholder="Create post"
-            type="text"
+            placeholder="Email"
+            type="email"
          >
       </div>
       <div class="flex flex-col">
