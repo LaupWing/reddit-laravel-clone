@@ -1,6 +1,6 @@
 <x-layout>
    <form 
-      class="mx-auto mt-6 gap-6 bg-white flex flex-col rounded shadow px-6 py-8 w-full max-w-sm"
+      class="mx-auto mt-12 gap-6 bg-white flex flex-col rounded shadow px-6 py-8 w-full max-w-sm"
       method="POST"
       action="/users/authenticate"
    >
