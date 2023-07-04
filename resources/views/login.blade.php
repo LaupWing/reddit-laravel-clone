@@ -2,8 +2,9 @@
    <form 
       class="mx-auto mt-6 gap-6 bg-white flex flex-col rounded shadow px-6 py-8 w-full max-w-sm"
       method="POST"
-      accept="/users/authenticate"
+      action="/users/authenticate"
    >
+      @csrf
       <div class="flex flex-col">
          <h2 class="ml-1 font-bold text-gray-300 uppercase tracking-wide">Email</h2>
          <input 

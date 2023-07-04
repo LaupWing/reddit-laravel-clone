@@ -19,3 +19,4 @@ Route::get("/", [IndexController::class, "index"])->name("home");
 Route::get("/login", [UserController::class, "login"])
    ->middleware("guest")
    ->name("login");
+Route::post("/users/authenticate", [UserController::class, "authenticate"]);

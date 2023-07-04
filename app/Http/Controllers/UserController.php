@@ -34,9 +34,11 @@ class UserController extends Controller
    /**
     * Authenticate user.
     */
-   public function authenticate()
+   public function authenticate(Request $request)
    {
-      return view("login");
+      dd($request);
+      return redirect("/");
+      // return view("login");
    }
 
    /**
