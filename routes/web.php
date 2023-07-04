@@ -16,4 +16,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get("/", [IndexController::class, "index"])->name("home");
-Route::get("/login", [UserController::class, "login"])->name("login");
+Route::get("/login", [UserController::class, "login"])
+   ->middleware("guest")
+   ->name("login");
