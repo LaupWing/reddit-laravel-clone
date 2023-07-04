@@ -2,7 +2,7 @@
    <div class="w-full grid grid-cols-3 gap-6">
       <div class="flex flex-col col-span-2">
          @auth
-            <x-cards.base>
+            <x-cards.base class="mb-5">
                <div class="flex flex-1 gap-2 items-center">
                   <div class="w-10 h-10 border-gray-200 border-[3px] rounded-full overflow-hidden">
                      <img 
@@ -25,7 +25,7 @@
                </div>
             </x-cards.base>
          @endauth
-         <x-cards.base class="my-5">
+         <x-cards.base class="mb-5">
             <div class="flex flex-1 gap-2 items-center">
                <button class="bg-main/40 text-blue-500 py-1 items-center justify-center gap-2 w-24 rounded-full duration-200 flex">
                   <x-icons.rocket-comment class="w-6 h-6" />
