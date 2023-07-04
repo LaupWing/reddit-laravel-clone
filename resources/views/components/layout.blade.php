@@ -41,11 +41,11 @@
                <x-icons.chevron-down class="w-4 h-4 ml-10 text-gray-400" />
             </button>
             @else
-            <button class="bg-accent w-32 my-1 text-white rounded-full py-1 font-bold">
-               <a href="/login">
+            <a href="/login">
+               <button class="bg-accent w-32 my-1 text-white rounded-full py-1 font-bold">
                   Log In
-               </a>
-            </button>
+               </button>
+            </a>
          @endauth
       </div>
    </header>
