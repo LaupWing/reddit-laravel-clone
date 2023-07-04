@@ -12,6 +12,9 @@
             placeholder="Email"
             type="email"
          >
+         @error("email")
+            <p class="text-red-500 text-xs mt-1">{{$message}}</p>
+         @enderror
       </div>
       <div class="flex flex-col">
          <h2 class="ml-1 font-bold text-gray-300 uppercase tracking-wide">Password</h2>
@@ -20,6 +23,9 @@
             placeholder="Password"
             type="password"
          >
+         @error("password")
+            <p class="text-red-500 text-xs mt-1">{{$message}}</p>
+         @enderror
       </div>
       <button class="bg-accent w-32 my-1 mx-auto text-white rounded-full py-1 font-bold">
          Log In
