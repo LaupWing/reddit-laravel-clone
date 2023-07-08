@@ -12,7 +12,7 @@ class Topic extends Model
    protected $fillable = ["title", "description"];
 
    public function followers(){
-      return $this->belongsToMany(Follower::class);
+      return $this->hasMany(Follower::class);
    }
 
    public function owner(){
@@ -21,9 +21,5 @@ class Topic extends Model
 
    public function posts(){
       return $this->hasMany(Post::class);
-   }
-
-   public function folloers(){
-      return $this->hasMany(Follower::class);
    }
 }
