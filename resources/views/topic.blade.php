@@ -31,6 +31,13 @@
    <div class="w-full grid grid-cols-3 gap-6 py-10">
       <div class="flex flex-col col-span-2">
          <x-cards.sort class="mb-5"/>
+         <div class="flex flex-col gap-3">
+            @foreach ($topic->posts as $post)
+               <x-cards.post 
+                  :post="$post"
+               />
+            @endforeach
+         </div>
       </div>
       <div class="flex flex-col">
          <div class="flex flex-col bg-white rounded overflow-hidden border shadow border-gray-300">
