@@ -14,7 +14,9 @@
 <body class="antialiased min-h-screen w-full bg-main">
    <header class="w-full bg-secondary flex">
       <div class="container py-2 mx-auto flex gap-6">
-         <x-icons.reddit-circle class="text-accent w-10 h-10" />
+         <a href="{{url('/')}}">
+            <x-icons.reddit-circle class="text-accent w-10 h-10" />
+         </a>
          <div class="flex flex-1 relative">
             <x-icons.search class="text-gray-400/70 absolute top-0 bottom-0 left-4 my-auto w-6 h-6" />
             <input 
