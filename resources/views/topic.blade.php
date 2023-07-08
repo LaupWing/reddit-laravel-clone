@@ -22,7 +22,7 @@
             </div>
             <p>/t/{{$topic->id}}</p>
          </div>
-         <ul class="flex gap-4 font-bold text-gray-400">
+         <ul class="flex gap-4 font-semibold text-gray-400">
             <li class="px-2 pb-2 border-b-[4px] border-gray-600 text-gray-600">Posts</li>
             <li class="px-2 pb-2 border-b-[4px] border-transparent">Users</li>
          </ul>
