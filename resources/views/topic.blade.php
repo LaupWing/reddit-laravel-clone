@@ -33,12 +33,13 @@
          <x-cards.sort class="mb-5"/>
       </div>
       <div class="flex flex-col">
-         <div class="flex flex-col gap-4 bg-white rounded overflow-hidden">
+         <div class="flex flex-col bg-white rounded overflow-hidden">
             <div class="flex items-center px-2 py-3 bg-gray-600 text-white">
-               <h2 class="font-semibold text-xl text-whtie">{{$topic->name}}</h2>
+               <h2 class="font-semibold text-xl text-whtie">About {{$topic->name}}</h2>
             </div>
-            <div class="p-2">
+            <div class="p-3">
                <p>{{$topic->description}}</p>
+               <span>{{$topic->created_at}}</span>
             </div>
          </div>
       </div>
