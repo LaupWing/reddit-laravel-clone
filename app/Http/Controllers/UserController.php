@@ -40,9 +40,12 @@ class UserController extends Controller
          "email" => ["required", "email"],
          "password" => "required"
       ]);
-      dd($formFields);
+      if(auth()->attempt($formFields)){
+         $request->session()->regenerate();
+
+         return redirect("/")->with("message", "You are logged in!");
+      }
       return redirect("/");
-      // return view("login");
    }
 
    /**
