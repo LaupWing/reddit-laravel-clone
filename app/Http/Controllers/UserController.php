@@ -45,7 +45,7 @@ class UserController extends Controller
 
          return redirect("/")->with("message", "You are logged in!");
       }
-      return redirect("/");
+      return back()->withErrors(["credentials" => "Invalid Credentials"]);
    }
 
    /**
