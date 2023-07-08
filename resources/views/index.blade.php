@@ -25,7 +25,7 @@
                </div>
             </x-cards.base>
          @endauth
-         <x-cards.sort class="mb-2"/>
+         <x-cards.sort class="mb-5"/>
          <div class="flex flex-col gap-3">
             @foreach ($posts as $post)
                <x-cards.post 

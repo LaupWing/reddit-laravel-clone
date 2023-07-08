@@ -1,4 +1,4 @@
-<x-cards.base class="{{$attributes->class}}">
+<x-cards.base class="{{$attributes->get('class')}}">
    <div class="flex flex-1 gap-2 items-center">
       <button class="bg-main/40 text-blue-500 py-1 items-center justify-center gap-2 w-24 rounded-full duration-200 flex">
          <x-icons.rocket-comment class="w-6 h-6" />
