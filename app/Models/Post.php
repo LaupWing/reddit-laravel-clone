@@ -25,4 +25,9 @@ class Post extends Model
    {
       return $this->hasMany(PostComment::class);
    }
+
+   public function votes()
+   {
+      return $this->hasMany(Vote::class)->where("up", true);
+   }
 }
