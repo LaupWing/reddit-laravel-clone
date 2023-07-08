@@ -38,7 +38,7 @@ class TopicController extends Controller
    public function show(Topic $topic)
    {
       return view("topic", [
-         "topic" => $topic
+         "topic" => $topic->load(["posts"])
       ]);
    }
 
