@@ -15,9 +15,12 @@
                alt="Profile"
             >
          </div>
-         <div class="flex gap-6">
-            <h2 class="ml-32 text-3xl font-bold">{{$topic->name}}</h2>
-            <button class="text-white bg-gray-600 px-8 font-bold rounded-full">Join</button>
+         <div class="ml-32 flex flex-col">
+            <div class="flex gap-6">
+               <h2 class="text-3xl font-bold">{{$topic->name}}</h2>
+               <button class="text-white bg-gray-600 px-8 font-bold rounded-full">Join</button>
+            </div>
+            <p>/t/{{$topic->id}}</p>
          </div>
       </div>
    </div>
