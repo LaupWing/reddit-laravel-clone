@@ -21,4 +21,4 @@ Route::get("/login", [UserController::class, "login"])
    ->middleware("guest")
    ->name("login");
 Route::post("/users/authenticate", [UserController::class, "authenticate"]);
-Route::get("/t/{topicId}", [TopicController::class, "index"]);
+Route::get("/t/{topic}", [TopicController::class, "show"]);
