@@ -33,13 +33,15 @@
          <x-cards.sort class="mb-5"/>
       </div>
       <div class="flex flex-col">
-         <div class="flex flex-col bg-white rounded overflow-hidden">
+         <div class="flex flex-col bg-white rounded overflow-hidden border shadow border-gray-300">
             <div class="flex items-center px-2 py-3 bg-gray-600 text-white">
                <h2 class="font-semibold text-xl text-whtie">About {{$topic->name}}</h2>
             </div>
-            <div class="p-3">
+            <div class="p-3 flex flex-col gap-2">
                <p>{{$topic->description}}</p>
-               <span>{{$topic->created_at}}</span>
+               <span class="text-gray-400">Created {{ \Carbon\Carbon::parse($topic->created_at)->format('M d, Y') }}</span>
+               <hr>
+               {{-- <p><span>$topic-></span> Members</p> --}}
             </div>
          </div>
       </div>
