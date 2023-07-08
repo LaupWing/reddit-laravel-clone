@@ -22,7 +22,9 @@ class TopicFactory extends Factory
          "description" => fake()->text(),
          "user_id" => function() {
             return User::inRandomOrder()->first()->id;
-         }
+         },
+         "profile_picture" => rand(0, 1) ? fake()->imageUrl() : null,
+         "thumbnail" => rand(0, 1) ? fake()->imageUrl() : null
       ];
    }
 }
