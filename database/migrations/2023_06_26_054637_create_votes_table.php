@@ -14,6 +14,7 @@ return new class extends Migration
       Schema::create("votes", function (Blueprint $table) {
          $table->primary(["post_id", "user_id"]);
          $table->timestamps();
+         $table->boolean("up")->default(true);
          $table->foreignIdFor(
             \App\Models\User::class,
             "user_id"
