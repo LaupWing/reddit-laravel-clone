@@ -21,7 +21,8 @@ class VoteFactory extends Factory
 
       return [
          "user_id" => $user->id,
-         "post_id" => $post->id
+         "post_id" => $post->id,
+         "up" => rand(1, 100) <= 20 ? true : false
       ];
    }
 }
