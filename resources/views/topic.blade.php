@@ -28,4 +28,9 @@
          </ul>
       </div>
    </div>
+   <div class="w-full grid grid-cols-3 gap-6 py-10">
+      <div class="flex flex-col col-span-2">
+         <x-cards.sort class="mb-5"/>
+      </div>
+   </div>
 </x-layout>
