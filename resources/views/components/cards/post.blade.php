@@ -11,7 +11,7 @@
          <div class="w-5 h-5 border-gray-200 border-2 rounded-full overflow-hidden">
             <img 
                class="h-full w-full object-cover"
-               src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg" 
+               src="{{$post->topic->profile_picture ? $post->topic->profile_picture : 'https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg'}}" 
                alt="Profile"
             >
          </div>
