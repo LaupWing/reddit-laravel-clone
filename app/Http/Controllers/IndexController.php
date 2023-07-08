@@ -11,7 +11,12 @@ class IndexController extends Controller
    public function index()
    {
       return view("index", [
-         "posts" => Post::latest()->with(["topic", "user", "comments"])->paginate(10)
+         "posts" => Post::latest()->with([
+            "topic", 
+            "user", 
+            "comments",
+            "votes"
+         ])->paginate(10)
       ]);
    }
 }
