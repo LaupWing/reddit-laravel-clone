@@ -7,7 +7,7 @@
             alt="Profile"
          >
       </div>
-      <div class="bg-white p-4 relative">
+      <div class="bg-white p-4 pb-0 relative">
          <div class="absolute left-10 top-0">
             <img 
                class="w-24 h-24 rounded-full border-gray-300 border-[5px] transform -translate-y-1/2 object-cover"
@@ -22,6 +22,10 @@
             </div>
             <p>/t/{{$topic->id}}</p>
          </div>
+         <ul class="flex gap-4 font-bold text-gray-400">
+            <li class="px-2 pb-2 border-b-[4px] border-gray-600 text-gray-600">Posts</li>
+            <li class="px-2 pb-2 border-b-[4px] border-transparent">Users</li>
+         </ul>
       </div>
    </div>
 </x-layout>
