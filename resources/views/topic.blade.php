@@ -39,7 +39,7 @@
             @endforeach
          </div>
       </div>
-      <div class="flex flex-col">
+      <div class="flex flex-col gap-4">
          <div class="flex flex-col bg-white rounded overflow-hidden border shadow border-gray-300">
             <div class="flex items-center px-2 py-3 bg-gray-600 text-white">
                <h2 class="font-semibold text-xl text-whtie">About {{$topic->name}}</h2>
@@ -60,6 +60,7 @@
                </div>
             </div>
          </div>
+         <x-cards.policy />
       </div>
    </div>
 </x-layout>
