@@ -51,7 +51,7 @@
          @endauth
       </div>
    </header>
-   <main class="container p-10 mx-auto">
+   <main class="container mx-auto">
       {{$slot}}
    </main>
 </body>

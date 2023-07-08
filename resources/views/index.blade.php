@@ -1,5 +1,5 @@
 <x-layout>
-   <div class="w-full grid grid-cols-3 gap-6">
+   <div class="w-full grid grid-cols-3 gap-6 p-10">
       <div class="flex flex-col col-span-2">
          @auth
             <x-cards.base class="mb-5">
