@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\IndexController;
+use App\Http\Controllers\TopicController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -20,3 +21,4 @@ Route::get("/login", [UserController::class, "login"])
    ->middleware("guest")
    ->name("login");
 Route::post("/users/authenticate", [UserController::class, "authenticate"]);
+Route::get("/t/{topicId}", [TopicController::class, "index"]);
