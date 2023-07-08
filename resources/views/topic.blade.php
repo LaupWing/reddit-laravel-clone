@@ -48,10 +48,16 @@
                <p>{{$topic->description}}</p>
                <span class="text-gray-400">Created {{ \Carbon\Carbon::parse($topic->created_at)->format('M d, Y') }}</span>
                <hr>
-               <p>
-                  <span class="font-bold">{{count($topic->followers)}}</span>
-                  <span class="text-gray-400"> Members</span>
-               </p>
+               <div class="flex gap-6">
+                  <p>
+                     <span class="font-bold">{{count($topic->followers)}}</span>
+                     <span class="text-gray-400"> Members</span>
+                  </p>
+                  <p>
+                     <span class="font-bold">{{count($topic->posts)}}</span>
+                     <span class="text-gray-400"> Posts</span>
+                  </p>
+               </div>
             </div>
          </div>
       </div>
