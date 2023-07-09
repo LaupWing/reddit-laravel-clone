@@ -12,6 +12,11 @@ class DatabaseSeeder extends Seeder
     */
    public function run(): void
    {
+      \App\Models\User::factory()->create([
+         "name" => "Test User",
+         "email" => "test@example.com",
+         "password" => "$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi"
+      ]);
       \App\Models\User::factory(100)->create();
       \App\Models\Topic::factory(10)->create();
       \App\Models\Post::factory(100)->create();
@@ -21,10 +26,6 @@ class DatabaseSeeder extends Seeder
       $this->createUniqueJunction(500, \App\Models\PostFavorite::class);
       $this->createUniqueJunction(5000, \App\Models\Vote::class);
 
-      // \App\Models\User::factory()->create([
-      //     'name' => 'Test User',
-      //     'email' => 'test@example.com',
-      // ]);
    }
 
    public function createUniqueJunction($amount, $model_blueprint, $second_id = "post_id"){
