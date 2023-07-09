@@ -10,6 +10,7 @@
          <input 
             class="border h-10 flex-1 bg-gray-100 border-gray-200 focus:outline-none rounded px-2"
             placeholder="Email"
+            name="email"
             type="email"
          >
          @error("email")
@@ -21,6 +22,7 @@
          <input 
             class="border h-10 flex-1 bg-gray-100 border-gray-200 focus:outline-none rounded px-2"
             placeholder="Password"
+            name="password"
             type="password"
          >
          @error("password")
